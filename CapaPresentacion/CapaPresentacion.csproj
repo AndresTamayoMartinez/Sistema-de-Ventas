@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59A164FA-9009-4F67-B517-E99D6562BAF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Solrrack\Documents\Sistema de Ventas\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Sistema de Ventas</ProductName>
+    <PublisherName>TamayoDevelop</PublisherName>
+    <SuiteName>AppSisVentas</SuiteName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoIcono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>71C8F070DEDAD8CCE27FA932F0CBC372D89F9049</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CapaPresentacion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CP_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Clientes.Designer.cs">
+      <DependentUpon>CP_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Clientes_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Clientes_Datos.Designer.cs">
+      <DependentUpon>CP_Clientes_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Clientes_Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Clientes_Mostrar.Designer.cs">
+      <DependentUpon>CP_Clientes_Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Empleados.Designer.cs">
+      <DependentUpon>CP_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Empleados_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Empleados_Datos.Designer.cs">
+      <DependentUpon>CP_Empleados_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Empleados_Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Empleados_Mostrar.Designer.cs">
+      <DependentUpon>CP_Empleados_Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ingresos.Designer.cs">
+      <DependentUpon>CP_Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ingresos_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ingresos_Nuevo.Designer.cs">
+      <DependentUpon>CP_Ingresos_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ingresos_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ingresos_Productos.Designer.cs">
+      <DependentUpon>CP_Ingresos_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ingresos_Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ingresos_Mostrar.Designer.cs">
+      <DependentUpon>CP_Ingresos_Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Menu.Designer.cs">
+      <DependentUpon>CP_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Productos_Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Productos_Mostrar.Designer.cs">
+      <DependentUpon>CP_Productos_Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Productos.Designer.cs">
+      <DependentUpon>CP_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Productos_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Productos_Datos.Designer.cs">
+      <DependentUpon>CP_Productos_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Proveedores.Designer.cs">
+      <DependentUpon>CP_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Proveedores_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Proveedores_Datos.Designer.cs">
+      <DependentUpon>CP_Proveedores_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Proveedores_Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Proveedores_Mostrar.Designer.cs">
+      <DependentUpon>CP_Proveedores_Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Reporte_Nota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Reporte_Nota.Designer.cs">
+      <DependentUpon>CP_Reporte_Nota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Seleccion_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Seleccion_Cliente.Designer.cs">
+      <DependentUpon>CP_Seleccion_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Seleccion_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Seleccion_Empleado.Designer.cs">
+      <DependentUpon>CP_Seleccion_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Seleccion_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Seleccion_Producto.Designer.cs">
+      <DependentUpon>CP_Seleccion_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Seleccion_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Seleccion_Proveedor.Designer.cs">
+      <DependentUpon>CP_Seleccion_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ventas.Designer.cs">
+      <DependentUpon>CP_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ventas_Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ventas_Mostrar.Designer.cs">
+      <DependentUpon>CP_Ventas_Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ventas_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ventas_Nuevo.Designer.cs">
+      <DependentUpon>CP_Ventas_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Ventas_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Ventas_Productos.Designer.cs">
+      <DependentUpon>CP_Ventas_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Nota.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Nota.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="CP_Clientes.resx">
+      <DependentUpon>CP_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Clientes_Datos.resx">
+      <DependentUpon>CP_Clientes_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Clientes_Mostrar.resx">
+      <DependentUpon>CP_Clientes_Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Empleados.resx">
+      <DependentUpon>CP_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Empleados_Datos.resx">
+      <DependentUpon>CP_Empleados_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Empleados_Mostrar.resx">
+      <DependentUpon>CP_Empleados_Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ingresos.resx">
+      <DependentUpon>CP_Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ingresos_Nuevo.resx">
+      <DependentUpon>CP_Ingresos_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ingresos_Productos.resx">
+      <DependentUpon>CP_Ingresos_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ingresos_Mostrar.resx">
+      <DependentUpon>CP_Ingresos_Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Menu.resx">
+      <DependentUpon>CP_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Productos.resx">
+      <DependentUpon>CP_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Productos_Mostrar.resx">
+      <DependentUpon>CP_Productos_Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Productos_Datos.resx">
+      <DependentUpon>CP_Productos_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Proveedores.resx">
+      <DependentUpon>CP_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Proveedores_Datos.resx">
+      <DependentUpon>CP_Proveedores_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Proveedores_Mostrar.resx">
+      <DependentUpon>CP_Proveedores_Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Reporte_Nota.resx">
+      <DependentUpon>CP_Reporte_Nota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Seleccion_Cliente.resx">
+      <DependentUpon>CP_Seleccion_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Seleccion_Empleado.resx">
+      <DependentUpon>CP_Seleccion_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Seleccion_Producto.resx">
+      <DependentUpon>CP_Seleccion_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Seleccion_Proveedor.resx">
+      <DependentUpon>CP_Seleccion_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ventas.resx">
+      <DependentUpon>CP_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ventas_Mostrar.resx">
+      <DependentUpon>CP_Ventas_Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ventas_Nuevo.resx">
+      <DependentUpon>CP_Ventas_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Ventas_Productos.resx">
+      <DependentUpon>CP_Ventas_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reporte_Nota.rdlc" />
+    <None Include="CapaPresentacion_TemporaryKey.pfx" />
+    <None Include="DS_Nota.xsc">
+      <DependentUpon>DS_Nota.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Nota.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Nota.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Nota.xss">
+      <DependentUpon>DS_Nota.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{948e359f-882e-4fbf-90e5-0a449c08c5c9}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codigo-de-barras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encuesta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal-pos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pago.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoIcono.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
