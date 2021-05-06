@@ -700,7 +700,7 @@
         <Top>7.53745cm</Top>
         <Left>2.8575cm</Left>
         <Height>1.8cm</Height>
-        <Width>15.74146cm</Width>
+        <Width>15.74145cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1200,7 +1200,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.73229cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -1284,9 +1284,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DS_Nota</DataSetName>
-        <Top>19.0912cm</Top>
+        <Top>18.95891cm</Top>
         <Left>2.8575cm</Left>
-        <Height>0.6cm</Height>
+        <Height>0.73229cm</Height>
         <Width>7.19604cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
@@ -1570,7 +1570,7 @@
         <Top>17.8912cm</Top>
         <Left>13.33437cm</Left>
         <Height>1.8cm</Height>
-        <Width>5.26458cm</Width>
+        <Width>5.26459cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>

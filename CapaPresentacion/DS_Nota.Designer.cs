@@ -336,7 +336,7 @@ namespace CapaPresentacion {
             
             private global::System.Data.DataColumn columnTelefono;
             
-            private global::System.Data.DataColumn columnNombreEmpleado;
+            private global::System.Data.DataColumn columnNombre1;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -461,9 +461,9 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn NombreEmpleadoColumn {
+            public global::System.Data.DataColumn Nombre1Column {
                 get {
-                    return this.columnNombreEmpleado;
+                    return this.columnNombre1;
                 }
             }
             
@@ -504,7 +504,7 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public sp_notaRow Addsp_notaRow(string Fecha, double Subtotal, double Abono, double Total, string Nombre, string Apellido, string Calle, string Colonia, string Ciudad, string Telefono, string NombreEmpleado) {
+            public sp_notaRow Addsp_notaRow(string Fecha, double Subtotal, double Abono, double Total, string Nombre, string Apellido, string Calle, string Colonia, string Ciudad, string Telefono, string Nombre1) {
                 sp_notaRow rowsp_notaRow = ((sp_notaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -518,7 +518,7 @@ namespace CapaPresentacion {
                         Colonia,
                         Ciudad,
                         Telefono,
-                        NombreEmpleado};
+                        Nombre1};
                 rowsp_notaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowsp_notaRow);
                 return rowsp_notaRow;
@@ -559,7 +559,7 @@ namespace CapaPresentacion {
                 this.columnColonia = base.Columns["Colonia"];
                 this.columnCiudad = base.Columns["Ciudad"];
                 this.columnTelefono = base.Columns["Telefono"];
-                this.columnNombreEmpleado = base.Columns["NombreEmpleado"];
+                this.columnNombre1 = base.Columns["Nombre1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -587,8 +587,8 @@ namespace CapaPresentacion {
                 base.Columns.Add(this.columnCiudad);
                 this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTelefono);
-                this.columnNombreEmpleado = new global::System.Data.DataColumn("NombreEmpleado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreEmpleado);
+                this.columnNombre1 = new global::System.Data.DataColumn("Nombre1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombre1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_Venta}, true));
                 this.columnID_Venta.AutoIncrement = true;
@@ -604,9 +604,8 @@ namespace CapaPresentacion {
                 this.columnColonia.MaxLength = 50;
                 this.columnCiudad.MaxLength = 30;
                 this.columnTelefono.MaxLength = 20;
-                this.columnNombreEmpleado.AllowDBNull = false;
-                this.columnNombreEmpleado.Caption = "Nombre1";
-                this.columnNombreEmpleado.MaxLength = 50;
+                this.columnNombre1.AllowDBNull = false;
+                this.columnNombre1.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1243,12 +1242,12 @@ namespace CapaPresentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string NombreEmpleado {
+            public string Nombre1 {
                 get {
-                    return ((string)(this[this.tablesp_nota.NombreEmpleadoColumn]));
+                    return ((string)(this[this.tablesp_nota.Nombre1Column]));
                 }
                 set {
-                    this[this.tablesp_nota.NombreEmpleadoColumn] = value;
+                    this[this.tablesp_nota.Nombre1Column] = value;
                 }
             }
             
@@ -1702,7 +1701,7 @@ namespace CapaPresentacion.DS_NotaTableAdapters {
             tableMapping.ColumnMappings.Add("Colonia", "Colonia");
             tableMapping.ColumnMappings.Add("Ciudad", "Ciudad");
             tableMapping.ColumnMappings.Add("Telefono", "Telefono");
-            tableMapping.ColumnMappings.Add("Nombre1", "NombreEmpleado");
+            tableMapping.ColumnMappings.Add("Nombre1", "Nombre1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         

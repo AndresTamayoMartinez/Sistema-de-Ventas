@@ -33,7 +33,7 @@
               <Mapping SourceColumn="Colonia" DataSetColumn="Colonia" />
               <Mapping SourceColumn="Ciudad" DataSetColumn="Ciudad" />
               <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
-              <Mapping SourceColumn="Nombre1" DataSetColumn="NombreEmpleado" />
+              <Mapping SourceColumn="Nombre1" DataSetColumn="Nombre1" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -69,7 +69,7 @@
   <xs:element name="DS_Nota" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Nota" msprop:Generator_UserDSName="DS_Nota">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="sp_nota" msprop:Generator_TableClassName="sp_notaDataTable" msprop:Generator_TableVarName="tablesp_nota" msprop:Generator_TablePropName="sp_nota" msprop:Generator_RowDeletingName="sp_notaRowDeleting" msprop:Generator_RowChangingName="sp_notaRowChanging" msprop:Generator_RowEvHandlerName="sp_notaRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_notaRowDeleted" msprop:Generator_UserTableName="sp_nota" msprop:Generator_RowChangedName="sp_notaRowChanged" msprop:Generator_RowEvArgName="sp_notaRowChangeEvent" msprop:Generator_RowClassName="sp_notaRow">
+        <xs:element name="sp_nota" msprop:Generator_TableClassName="sp_notaDataTable" msprop:Generator_TableVarName="tablesp_nota" msprop:Generator_RowChangedName="sp_notaRowChanged" msprop:Generator_TablePropName="sp_nota" msprop:Generator_RowDeletingName="sp_notaRowDeleting" msprop:Generator_RowChangingName="sp_notaRowChanging" msprop:Generator_RowEvHandlerName="sp_notaRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_notaRowDeleted" msprop:Generator_RowClassName="sp_notaRow" msprop:Generator_UserTableName="sp_nota" msprop:Generator_RowEvArgName="sp_notaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Venta" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID_Venta" msprop:Generator_ColumnPropNameInRow="ID_Venta" msprop:Generator_ColumnPropNameInTable="ID_VentaColumn" msprop:Generator_UserColumnName="ID_Venta" type="xs:int" />
@@ -125,7 +125,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="NombreEmpleado" msdata:Caption="Nombre1" msprop:Generator_ColumnVarNameInTable="columnNombreEmpleado" msprop:Generator_ColumnPropNameInRow="NombreEmpleado" msprop:Generator_ColumnPropNameInTable="NombreEmpleadoColumn" msprop:Generator_UserColumnName="NombreEmpleado">
+              <xs:element name="Nombre1" msprop:Generator_ColumnVarNameInTable="columnNombre1" msprop:Generator_ColumnPropNameInRow="Nombre1" msprop:Generator_ColumnPropNameInTable="Nombre1Column" msprop:Generator_UserColumnName="Nombre1">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -135,7 +135,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="sp_nota_productos" msprop:Generator_TableClassName="sp_nota_productosDataTable" msprop:Generator_TableVarName="tablesp_nota_productos" msprop:Generator_TablePropName="sp_nota_productos" msprop:Generator_RowDeletingName="sp_nota_productosRowDeleting" msprop:Generator_RowChangingName="sp_nota_productosRowChanging" msprop:Generator_RowEvHandlerName="sp_nota_productosRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_nota_productosRowDeleted" msprop:Generator_UserTableName="sp_nota_productos" msprop:Generator_RowChangedName="sp_nota_productosRowChanged" msprop:Generator_RowEvArgName="sp_nota_productosRowChangeEvent" msprop:Generator_RowClassName="sp_nota_productosRow">
+        <xs:element name="sp_nota_productos" msprop:Generator_TableClassName="sp_nota_productosDataTable" msprop:Generator_TableVarName="tablesp_nota_productos" msprop:Generator_RowChangedName="sp_nota_productosRowChanged" msprop:Generator_TablePropName="sp_nota_productos" msprop:Generator_RowDeletingName="sp_nota_productosRowDeleting" msprop:Generator_RowChangingName="sp_nota_productosRowChanging" msprop:Generator_RowEvHandlerName="sp_nota_productosRowChangeEventHandler" msprop:Generator_RowDeletedName="sp_nota_productosRowDeleted" msprop:Generator_RowClassName="sp_nota_productosRow" msprop:Generator_UserTableName="sp_nota_productos" msprop:Generator_RowEvArgName="sp_nota_productosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Producto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID_Producto" msprop:Generator_ColumnPropNameInRow="ID_Producto" msprop:Generator_ColumnPropNameInTable="ID_ProductoColumn" msprop:Generator_UserColumnName="ID_Producto" type="xs:int" />
