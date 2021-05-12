@@ -99,7 +99,7 @@ namespace CapaPresentacion
             bool empty = false;
             if(txtProviderID.Text != "" && txtProviderName.Text != "")
             {
-                empty = false;
+                empty = true;
             }
             return empty;
         }
